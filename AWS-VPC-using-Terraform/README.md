@@ -121,7 +121,7 @@ rm -rf terraform.tfstate*
 
 ## Step-05: v2-vpc-module-standardized - Standardized and Generalized
 - In the next series of steps we are going to standardize the VPC configuration
-- c2-generic-variables.tf
+- generic-variables.tf
 ```t
 # Input Variables
 # AWS Region
@@ -144,7 +144,7 @@ variable "business_divsion" {
 }
 ```
 
-## Step-06: c3-local-values.tf
+## Step-06: local-values.tf
 - Understand about [Local Values](https://www.terraform.io/docs/language/values/locals.html)
 ```t
 # Define Local Values in Terraform
@@ -159,7 +159,7 @@ locals {
 }
 ```
 
-## Step-07: c4-01-vpc-variables.tf
+## Step-07: vpc-variables.tf
 ```t
 # VPC Input Variables
 
@@ -234,7 +234,7 @@ variable "vpc_single_nat_gateway" {
   default = true
 }
 ```
-## Step-08: c4-02-vpc-module.tf
+## Step-08: vpc-module.tf
 ```t
 # Create VPC Terraform Module
 module "vpc" {
@@ -280,7 +280,7 @@ module "vpc" {
   }
 }
 ```
-## Step-09: c4-03-vpc-outputs.tf
+## Step-09: vpc-outputs.tf
 ```t
 # VPC Output Values
 
